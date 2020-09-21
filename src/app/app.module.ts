@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { SightsComponent } from './sights/sights.component';
 import { FooterComponent } from './footer/footer.component';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SlideshowModule
   ],
   providers: [MenuComponent],
   bootstrap: [AppComponent]
