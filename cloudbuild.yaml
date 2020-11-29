@@ -8,6 +8,6 @@ steps:
 # Deploy container image to Cloud Run
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
-    args: ['run', 'deploy', 'tierheim', '--image', 'gcr.io/$PROJECT_ID/$COMMIT_SHA', '--region', 'europe-west3-a', '--platform', 'managed']
+    args: ['run', 'deploy', 'tierheim', '--image', 'gcr.io/$PROJECT_ID/$COMMIT_SHA', '--region', 'europe-west3', '--platform', 'managed']
 images:
   - gcr.io/$PROJECT_ID/$COMMIT_SHA
