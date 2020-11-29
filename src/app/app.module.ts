@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { SightsComponent } from './sights/sights.component';
 import { FooterComponent } from './footer/footer.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { AnimalsComponent } from './animals/animals.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import {SlideshowModule} from 'ng-simple-slideshow';
     HomeComponent,
     AboutComponent,
     SightsComponent,
-    FooterComponent
+    FooterComponent,
+    AnimalsComponent
   ],
   imports: [
     BrowserModule,

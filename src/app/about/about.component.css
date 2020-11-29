@@ -1,0 +1,17 @@
+#grid{
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 33%);
+  background: #0c141d;
+  height: 100%;
+}
+p{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: #f1f0eb;
+}
+h1{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: white;
+}
