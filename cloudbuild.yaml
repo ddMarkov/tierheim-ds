@@ -11,3 +11,4 @@ steps:
     args: ['run', 'deploy', 'tierheim', '--image', 'gcr.io/$PROJECT_ID/$COMMIT_SHA', '--region', 'europe-west3-a', '--platform', 'managed']
   - images:
       - gcr.io/$PROJECT_ID/$COMMIT_SHA
+
