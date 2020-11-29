@@ -9,6 +9,5 @@ steps:
   - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
     entrypoint: gcloud
     args: ['run', 'deploy', 'tierheim', '--image', 'gcr.io/tierheim', '--region', 'europe-west3', '--platform', 'managed']
-  - images:
-      - gcr.io/tierheim
-
+images:
+  - gcr.io/tierheim
