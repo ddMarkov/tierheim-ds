@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -13,6 +12,7 @@ import { SightsComponent } from './sights/sights.component';
 import { FooterComponent } from './footer/footer.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { AnimalsComponent } from './animals/animals.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -30,7 +30,8 @@ import { AnimalsComponent } from './animals/animals.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SlideshowModule
+    SlideshowModule,
+    FontAwesomeModule
   ],
   providers: [MenuComponent],
   bootstrap: [AppComponent]

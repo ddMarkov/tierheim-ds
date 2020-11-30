@@ -5,7 +5,7 @@ import {ContactComponent} from './contact/contact.component';
 import {ReservationComponent} from './reservation/reservation.component';
 import {AboutComponent} from './about/about.component';
 import {SightsComponent} from './sights/sights.component';
-import {AnimalsComponent} from "./animals/animals.component";
+import {AnimalsComponent} from './animals/animals.component';
 
 const routes: Routes = [
     {

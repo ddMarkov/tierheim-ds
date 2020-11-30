@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
           this.plusSlides(this.slideIndex + 1);
           console.log('change');
         },
-        4000);
+        8000);
   }
   showSlides(n: number): void {
     let i;
