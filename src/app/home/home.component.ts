@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-      this.showSlides(this.slideIndex);
+      this.currentSlide(1);
       setInterval(() => {
           this.plusSlides(this.slideIndex + 1);
           console.log('change');
@@ -26,7 +26,6 @@ export class HomeComponent implements OnInit {
   showSlides(n: number): void {
     let i;
     const slides = document.getElementsByClassName('mySlides');
-    const dots = document.getElementsByClassName('dot');
     if (n > slides.length) {
       this.slideIndex = 1;
     }
@@ -34,11 +33,7 @@ export class HomeComponent implements OnInit {
     for (i = 0; i < slides.length; i++) {
       slides[i].setAttribute( 'style', 'display:none;');
     }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace('  active', '');
-    }
     slides[this.slideIndex - 1].setAttribute( 'style', 'display:block;');
-    dots[this.slideIndex - 1].className += ' active';
   }
   currentSlide(n): void {
     this.showSlides(this.slideIndex = n);

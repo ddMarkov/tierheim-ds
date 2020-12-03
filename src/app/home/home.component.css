@@ -1,6 +1,5 @@
 
 * {
-  box-sizing:border-box;
   margin: 0;
   padding: 0;
   background: black;
@@ -14,7 +13,6 @@
   padding:0;
 }
 img{
-  object-fit: cover;
   height: 100%;
   width: 100%;
   margin: 0;
@@ -30,6 +28,7 @@ img{
 
 /* Next & previous buttons */
 .prev, .next {
+  z-index: 1;
   cursor: pointer;
   position: absolute;
   top: 50%;
