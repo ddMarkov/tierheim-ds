@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -116,4 +115,115 @@ img{
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+#bottom-buttons{
+  display: flex;
+  flex-flow: row;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 10%;
+}
+#bottom-buttons h1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#bottom-buttons h1:hover{
+  transition: background-color 0.5s;
+  color: black;
+  background-color: white;
+  outline: none;
+
+}
+#contact-bottom{
+  display: flex;
+  flex-flow: row;
+  background-color: var(--eerie-black);
+  color: white;
+  width: 100%;
+  height: 40%;
+}
+#shelter-contact-div{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+}
+#manager-contact-div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+}
+#managers-pic{
+  vertical-align: middle;
+  width: 370px;
+  height: 300px;
+  border-radius: 50%;
+
+}
+#manager-div{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+#manager-contact-div table{
+}
+
+
+
+
+
+
+
+
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+.card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   margin: 8px;
+ }
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }

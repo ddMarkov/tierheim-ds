@@ -1,3 +1,8 @@
+:root {
+  --eerie-black: #282929;
+  --jet: #333333;
+  --steel-teal: #668586;
+}
 head{
   width: 100%;
 }

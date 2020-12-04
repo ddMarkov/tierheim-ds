@@ -1,8 +1,9 @@
+<!--Next two lines are the buttons on the slideshow at the homepage-->
 <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
 <a class="next" (click)="plusSlides(1)">&#10095;</a>
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
+<div class="slideshow-container">
+  <!-- Full-width images with number -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
     <img alt="" [src]="imgArray[0]" >
@@ -17,15 +18,41 @@
     <div class="numbertext">3 / 3</div>
     <img [src]="imgArray[1]">
   </div>
-
-  <!-- Next and previous buttons -->
-
-
-
-
-
 </div>
-<!-- The dots/circles -->
 
+<!--The buttons for adoption and donation-->
+<div id="bottom-buttons">
+  <h1 id="adopt" routerLink="animals">Adoptieren Sie</h1>
+  <h1 routerLink="contact">Spenden Sie</h1>
+</div>
 
+<div id="contact-bottom">
+  <div id="shelter-contact-div">
+    <table>
+      <tr>
+        <th>Email:</th>
+        <td>contat@sargon.com</td>
+      </tr>
 
+      <tr>
+        <th>Adresse:</th>
+        <td>4059 Mt Lee Dr. Hollywood, CA 90068</td>
+      </tr>
+
+      <tr>
+        <th>Tel:</th>
+        <td>0 163 187 808</td>
+      </tr>
+    </table>
+  </div>
+  <div class="card">
+    <img src="assets/pics/snoop-dogg-wine-01.jpg" alt="Mike" style="width:100%">
+    <div class="container">
+      <h2>Mike Ross</h2>
+      <p class="title">Art Director</p>
+      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+      <p>mike@example.com</p>
+      <p><button class="button">Contact</button></p>
+    </div>
+  </div>
+</div>
