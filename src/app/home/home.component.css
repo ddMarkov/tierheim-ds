@@ -147,6 +147,7 @@ img{
   color: white;
   width: 100%;
   height: 40%;
+  min-height: 500px;
 }
 #shelter-contact-div{
   width: 100%;
@@ -161,66 +162,29 @@ img{
   grid-template-columns: repeat(2,auto);
 }
 #managers-pic{
-  vertical-align: middle;
-  width: 370px;
-  height: 300px;
-  border-radius: 50%;
-
-}
-#manager-div{
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-}
-
-#manager-contact-div table{
+align-self: center;
+height: 256px;
+  width: 256px;
 }
 
 
 
-
-
-
-
-
-
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-}
-.container {
-  padding: 0 16px;
-}
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .title {
   color: grey;
 }
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
-.button:hover {
-  background-color: #555;
-}
+
 .card {
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   margin: 8px;
+   display: grid;
+  width: 100%;
+  grid-template-rows: repeat(2,auto);
+  height: 100%;
  }
+#manager-center-container{
+  display: flex;
+  background-color: yellow;
+  flex-flow: column;
+}
+
 @media screen and (max-width: 650px) {
   .column {
     width: 100%;

@@ -3,28 +3,26 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  background: black;
-  height: 15%;
+  height: 10%;
   color: white;
   margin: 0;
   padding: 0;
-
+  background:var(--second-black);
+  position: relative;
 }
-ul{
-  width: 100%;
-  text-decoration: none;
-  grid-column: 2/3;
+#flex{
   display: flex;
+  flex-flow: row;
+  grid-column: 2/3;
   align-items: center;
-  flex-flow: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  color: white;
-  background: black;
+
 }
 
-li {
-  padding: 0;
-  margin: 0;
+p{
+  margin: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: white;
 }
+
