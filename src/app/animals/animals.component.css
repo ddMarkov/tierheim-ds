@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 33%);
   grid-template-rows: repeat(3, 33%);
-  background: #0c141d;
+  background: var(--second-black);
   height: 100%;
 }
 p{

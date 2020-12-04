@@ -7,7 +7,7 @@
   color: white;
   margin: 0;
   padding: 0;
-  background:var(--second-black);
+  background: black;
   position: relative;
 }
 #flex{
