@@ -1,9 +1,18 @@
-#inputGrid{
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  background: #0c141d;
+  height: 100%;
+
+}
+
+#input-container{
   grid-column: 2/3;
   color: white;
   width: 100%;
   margin-top: 20%;
   height: 100%;
+  position: relative;
 }
 input{
   margin: 1vw;
@@ -15,5 +24,12 @@ label{
   flex-flow: column;
   align-content: center;
   align-items: center;
-
+}
+#button-container{
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
 }

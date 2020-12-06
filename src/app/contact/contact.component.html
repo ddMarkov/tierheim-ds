@@ -1,13 +1,17 @@
-<div id="grid">
-  <div id="inputGrid">
-   <label> Vorname: </label>
-    <input type="text">
-    <label> Nachname:</label>
-    <input>
-    <label>E-Mail Adresse:</label>
-    <input type="email">
-    <label>Telefonnummer:</label>
-    <input type="tel">
-
+<div class="container">
+  <div id="input-container">
+    <label for="name"> Vorname: </label>
+    <input id="name" type="text" placeholder="Franz">
+    <label for="surname"> Nachname:</label>
+    <input id="surname" placeholder="Meier">
+    <label for="email">E-Mail Adresse:</label>
+    <input type="email" id="email" placeholder="franz@meier.com">
+    <label for="price" style="color: white">Wie viel möchten Sie spenden?</label>
+    <input type="number" id="price" placeholder="10€">
+    <div id="button-container">
+      <button>Jetzt spenden!</button>
+    </div>
   </div>
+
+
 </div>

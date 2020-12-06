@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { AnimalsComponent } from './animals/animals.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,13 +26,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AboutComponent,
     SightsComponent,
     FooterComponent,
-    AnimalsComponent
+    AnimalsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SlideshowModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule,
   ],
   providers: [MenuComponent],
   bootstrap: [AppComponent]
