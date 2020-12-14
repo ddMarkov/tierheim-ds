@@ -1,3 +1,4 @@
+/*Everything should have by default this css settings since most of it need them*/
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +12,7 @@
   margin: 0;
   padding:0;
 }
+/*Pictures in the slideshow*/
 img{
   height: 100%;
   width: 100%;
@@ -41,35 +43,19 @@ img{
   border-radius: 0 3px 3px 0;
   user-select: none;
   background: white;
-
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a black background color with a little bit see-through to the slideshow buttons */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
   color: white;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  background: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Number text (1/3 etc) */
+/* Number text (1/3 etc) on the slideshow in the left upper corner */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -78,22 +64,6 @@ img{
   top: 0;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-  margin: 0;
-  padding: 0;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 
 /* Fading animation */
 .fade {
@@ -103,10 +73,7 @@ img{
   animation-duration: 1.5s;
 }
 
-.dots{
-  display: none;
-}
-
+/*Settings of the animations*/
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -117,6 +84,7 @@ img{
   to {opacity: 1}
 }
 
+/*Adoption and donation buttons under the slideshow*/
 #bottom-buttons{
   display: flex;
   flex-flow: row;
@@ -125,6 +93,8 @@ img{
   width: 100%;
   height: 10%;
 }
+
+/*Text in the adoption and donation buttons*/
 #bottom-buttons h1{
   display: flex;
   align-items: center;
@@ -133,6 +103,7 @@ img{
   height: 100%;
 }
 
+/*Text in the adoption and donation buttons on hover*/
 #bottom-buttons h1:hover{
   transition: background-color 0.5s;
   color: black;
@@ -140,6 +111,8 @@ img{
   outline: none;
 
 }
+
+/*The div with the address, email, etc.*/
 #contact-bottom{
   display: flex;
   flex-flow: row;
@@ -148,6 +121,8 @@ img{
   height: 40%;
   min-height: 500px;
 }
+
+/*The div with the address, email, etc. on the left*/
 #shelter-contact-div{
   width: 100%;
   display: flex;
@@ -156,31 +131,35 @@ img{
   font-size: 1.5em;
   background-color: var(--very-dark-blue);
 }
+/*The div with the address, email, etc. on the right*/
 #manager-contact-div{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2,auto);
 }
+/*Pic in the manager-contact-div*/
 #managers-pic{
 align-self: center;
 height: 256px;
   width: 256px;
 }
-
-
-
+/*Managers title text*/
 .title {
   color: grey;
 }
+/*Container class for the div*/
 .container{
   background-color: var(--very-dark-blue);
 }
+
 h2, p{
   background-color: var(--very-dark-blue);
 }
 table, tr, th, td {
   background-color: var(--very-dark-blue);
 }
+
+/*Container containing the pic and the text for the manager box on the right*/
 .card {
   background-color: var(--very-dark-blue);
    display: grid;
@@ -188,14 +167,4 @@ table, tr, th, td {
   grid-template-rows: repeat(2,auto);
   height: 100%;
  }
-#manager-center-container{
-  display: flex;
-  flex-flow: column;
-}
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
